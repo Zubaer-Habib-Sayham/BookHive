@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90%;
+  width: 100%;
+  gap: 50px;
+ }
+
+
+html,
+body {
+  height: 100%;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: burlywood;
+  background-size: cover;
+  background-position: center;
+}
+ 
+
+ 
+ header {
+  padding: 0 5vh;
+  color:#361818
+ }
+ 
+ 
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px; /* adds space between items */
+  color:#361818;
+}
+
+.select-body select{
+    position:relative;
+    width: 170px;
+    height: 40px;
+    padding: 5px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* --- Search Bar --- */
+.search_bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search_bar input[type="text"] {
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  width:425px; 
+  font-size: 20px; 
+}
+
+.search_bar button {
+  padding: 10px 15px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.search_bar button:hover {
+  background-color: #333;
+}
+
+ 
+ .nav_logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+ }
+ 
+ 
+ 
+ 
+ .nav_link {
+  display: flex;
+  list-style: none;
+  color:#361818;
+ }
+ 
+ 
+ .nav_link li {
+  padding: 0 15px;
+ }
+ 
+ 
+ .nav_link a {
+  color: rgb(45, 16, 16);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+ }
+ 
+ 
+ .nav_link a:hover {
+  color: #361818;
+ }
+ 
+ 
+
+ 
+ .login_box {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ 
+ 
+ .login_box h1{
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+ }
+ 
+ 
+ .login_form{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ 
+ .login_form input[type="text"],
+ .login_form input[type="password"],
+ .login_form input[type="number"],
+ .login_form input[type="submit"]{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+ }
+ 
+ 
+ .login_form input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+ }
+ 
+ 
+ .login_form input[type="submit"]:hover {
+  background-color: rgb(26, 26, 26);
+ }
+
+ .btn {
+  background: #5c3a3a;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14.5px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0px;
+  float: right;
+  padding: 10px;
+ }
+ 
+ 
+ .btn:hover {
+  background: #5c3a3a;
+  text-decoration: none;
+ }
+
+.search_results { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; }
+ 
+
+.book_card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.book_card h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.book_card p {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+.login_page {
+  background-image: url("background_.png"); 
+  background-size: flex;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* --- Book Table --- */
+.book_table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #4b2e2e; 
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.book_table th,
+.book_table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.book_table th {
+  background-color: #3a1f1f; 
+  font-size: 20px;
+}
+
+.book_table tr {
+  transition: background-color 0.3s ease;
+}
+
+.book_table tr:hover {
+  background-color: #5c3a3a;
+}
+
+.book_table a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.book_table a:hover {
+  color: #ffd700; 
+}
